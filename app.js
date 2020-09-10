@@ -9,9 +9,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+let result = [];
+let sum = a+b;
+result.push(sum);
+let secondResule = `The sum of ${a} and ${b} is ${sum}.`;
+result.push(secondResule)
+console.log(result)
 }
-
+sum(8, 6)
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
