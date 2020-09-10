@@ -86,7 +86,7 @@ secondResule = `The product of ${a} and ${b} and ${c} is ${result2[2]}`
 result3.push(secondResule)
 }
 
-console.log(result3)
+// console.log(result3)
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -109,14 +109,19 @@ Test this function by hand in the console to get it working, and when you think 
 uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
-
+let a = 3;
+let b = 4;
+let c = 2;
+var testArray = [a, b, c]; //eslint-disable-line
+let result4 = [];
 function sumArray(sumArr) { //eslint-disable-line
        let sum = sumArr.reduce((a, b) => a + b, 0) // this is first solution
-     console.log(sum)
-
+result4.push(sum);
+secondResule = `${a},${b},${c} was passed in as an array of numbers, and ${sum} is their sum`
+result4.push(secondResule)
 }
 sumArray(testArray)
+console.log(result4)
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
