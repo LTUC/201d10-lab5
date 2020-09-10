@@ -117,10 +117,16 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
 
+    var x = multiply ( testArray[0] , testArray[1] );
+    var y = multiply ( x[0] , testArray[2] );
+
+    return [` ${y} `,` The numbers ${testArray[0]},${testArray[1]},${testArray[3]}  have a product of ${y}. `]
+
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+multiplyArray(testArray);
+console.log(multiplyArray(testArray));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
