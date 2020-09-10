@@ -6,17 +6,20 @@ Write a function called sum() that takes in two numbers as arguments and then re
 "The sum of 4 and 7 is 11."
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
-
+let secondResule = ``;
+let result = [];
 // Write your code here
 function sum(a, b , c) { //eslint-disable-line
-let result = [];
+
 let sum = a+b+c;
 result.push(sum);
-let secondResule = `The sum of ${a} and ${b} and ${c} is ${sum}.`;
+ secondResule = `The sum of ${a} and ${b} and ${c} is ${sum}.`;
 result.push(secondResule)
-console.log(result)
+// console.log(result)
 }
 sum(8, 6 ,4)
+
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -35,17 +38,18 @@ Test this function by hand in the console to get it working, and when you think 
 is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+let result2 = []
 function multiply(a, b , c) { //eslint-disable-line
 
-    let result = [];
     let sum = a*b*c;
-    result.push(sum);
-    let secondResule = `The sum of ${a} and ${b} and ${c} is ${sum}.`;
-    result.push(secondResule)
-    console.log(result)
+    result2.push(sum);
+     secondResule = `The product of ${a} and ${b} and ${c} is ${sum}`;
+    result2.push(secondResule)
+    // console.log(result2)
 
 }
 multiply(9, 5 ,4)
+
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -68,12 +72,22 @@ function that you've already created. You're going to have to be resourceful to 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
 
-    multiply(a,b,c)
-    sum(a,b,c)
-}
+let result3 = [];
 sumAndMultiply(5,7,9)
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+sum(a,b,c)
+multiply(a,b,c)
+result3.push(result[2])
+result3.push(result2[2])
+secondResule = `${a} and ${b} and ${c} sum to ${result[2]}`
+result3.push(secondResule)
+secondResule = `The product of ${a} and ${b} and ${c} is ${result2[2]}`
+result3.push(secondResule)
+}
+
+console.log(result3)
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
@@ -81,21 +95,28 @@ sumAndMultiply(5,7,9)
 
 /////////////////////////////////////
 /* Problem 4
-Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sumArray() that takes in an array of numbers as its single argument 
+and then returns an array where the first element is the sum of the numbers in the array, and 
+the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "2,3,4 was passed in as an array of numbers, and 9 is their sum."
 
-IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
+IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, 
+use your sum() function that you've already created. You're going to have to be resourceful to 
+figure out how to do this. However, you may continue to use the + operator for string concatenation.
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished, 
+uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+       let sum = sumArr.reduce((a, b) => a + b, 0) // this is first solution
+     console.log(sum)
 
 }
-
+sumArray(testArray)
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
