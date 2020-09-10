@@ -8,6 +8,21 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+
+/*
+1. fork ltuc
+2. clone from your account
+3. git checkout -b newbranch
+4. code code code 
+5. git add and commit
+6. git push origin newbranch
+7. git checkout master
+8. go to GH and do PR from newbranch to master (make sure to change LTUC to your account name)
+9. merge the PR 
+10. in terminal do git pull origin master
+11. go to 3
+12. after finishing all the problems do a PR from your master to LTUC master
+*/
 function sum(a, b) { //eslint-disable-line
   var sum = a + b;
   //'The sum of ' + a + ' and' + b + ' is' + sum +'.'
