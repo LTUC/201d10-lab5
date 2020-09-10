@@ -59,6 +59,7 @@ function sumAndMultiply(a, b, c) {
     var three=`${a} and ${b} and ${c} sum to ${jme3}.`;
     var four=`The product of ${a} and ${b} and ${c} is ${darb}.`;
     return[jme3,darb,three,four];
+    // Fix comment
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
