@@ -32,7 +32,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) {
 
     var result = a * b;
-    return [` ${a} x ${b} = ${result}`];
+    return [ result , `The product of ${a} and ${b} is ${result}.`];
 
 }
 
