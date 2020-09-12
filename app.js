@@ -35,6 +35,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { 
+<<<<<<< HEAD
       //eslint-disable-line
         var index1 = a+b;
         var index2="The product of "+a+" and "+b+" is "+index1+"."
@@ -124,7 +125,6 @@ Test this function by hand in the console to get it working, and when you think 
 function multiplyArray(multArr) { //eslint-disable-line
 
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
