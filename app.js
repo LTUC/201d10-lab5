@@ -123,7 +123,7 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
 }
-
+//ch
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
