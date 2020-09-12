@@ -91,10 +91,22 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
+function sumArray(sumArr) 
+{  
+    var resultindex1 = 0 ;
+    var resultindex2="";
+    for(var i =0 ; i<sumArr.length ;i++){
+        resultindex1 = parseInt(sum(resultindex1,sumArr[i]));
+        resultindex2=resultindex2+sumArr[i]+","
+    }
+    resultindex2 = resultindex2+" was passed in as an array of numbers, and "+resultindex1+" is their sum.";
+   var result = [resultindex1,resultindex2];
+   return result;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
+console.log(sumArray(testArray));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
