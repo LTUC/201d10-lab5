@@ -13,13 +13,12 @@ function sum(a, b) { //eslint-disable-line
     var index2=a.toString()+b.toString()
     var result = [index1,index2]
     return result
-<<<<<<< HEAD
+
     } //eslint-disable-line
 
 console.log(sum(1,2))
-=======
-    }
->>>>>>> problem4
+
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -35,7 +34,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { 
-<<<<<<< HEAD
+
       //eslint-disable-line
         var index1 = a+b;
         var index2="The product of "+a+" and "+b+" is "+index1+"."
@@ -46,15 +45,7 @@ function multiply(a, b) {
 console.log(multiply(1,2))//eslint-disable-line
 
 
-
-=======
-    //eslint-disable-line
-      var index1 = a+b;
-      var index2="The product of "+a+" and "+b+" is "+index1+"."
-      var result = [index1,index2]
-      return result
-}  //eslint-disable-line
->>>>>>> problem5
+ //eslint-disable-line
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
