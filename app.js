@@ -47,6 +47,14 @@ console.log(multiply(1,2))//eslint-disable-line
 
 
 
+=======
+    //eslint-disable-line
+      var index1 = a+b;
+      var index2="The product of "+a+" and "+b+" is "+index1+"."
+      var result = [index1,index2]
+      return result
+}  //eslint-disable-line
+>>>>>>> problem5
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -120,11 +128,20 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
-
+var multArrtest=[1,2,3]
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var resultindex1 = 1;
+    var resultindex2="";
+    for(var i =0 ; i<multArr.length ;i++){
+        resultindex1 = resultindex1*multArr[i];
+        resultindex2=resultindex2+multArr[i]+","
+    }
+    resultindex2 = resultindex2+" have a product of  "+resultindex1;
+   var result = [resultindex1,resultindex2];
+   return result;
 }
+console.log(multiplyArray(multArrtest))
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
