@@ -9,14 +9,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
- function sum() { 
+ function sum(a,b) { 
      var a=4;
      var b=7
-return['the sum of', a ,'and' ,b, 'is', a+b];
+return[a+b,'the sum of', a ,'and' ,b, 'is', a+b];
 // console.log('the sum of', a ,'and' ,b, 'is', a+b);
 }
 // Here is the test for sum(); uncomment it to run it
-sum();
+sum(4,7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
