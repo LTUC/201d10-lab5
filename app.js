@@ -78,15 +78,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
+var testDynamicArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
-    var forSum=0;
-    for(var i=0;i<testArray.length;i++){
-        forSum=sum(forSum,testArray[i])[0];
-    }
-    return[forSum,`${testArray} was passed in as an array of numbers, and ${forSum} is their sum.`]
 
-}
+    var sumDana = sum(testArray[0],testArray[1]);
+    
+    var sumRay4x = sum(sumDana[0], testArray[2]);
+    
+    var message4 = testArray + ' was passed in as an array of numbers, and '+ sumRay4x[0] + ' is their sum.';
+    
+    var arr4 = [sumRay4x[0] , message4];
+    
+    
+    return arr4;
+    
+    }
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -108,6 +114,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 function multiplyArray(multArr) { 
     //eslint-disable-line
+
     var arrDana5 = multiply(testArray[0],testArray[1]);
 
     var arrDana5x = multiply(arrDana5[0], testArray[2]);
@@ -145,10 +152,15 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    var darb=1;
+    for(var i=0;i<testDynamicArray.length;i++){
+        darb=multiply(darb,testDynamicArray[i])[0];
+    }
+    return[darb,`The numbers ${testDynamicArray} have a product of ${darb}.`];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
