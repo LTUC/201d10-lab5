@@ -108,11 +108,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 function multiplyArray(multArr) { 
     //eslint-disable-line
-    var darb=1;
-    for(var i=0;i<testArray.length;i++){
-        darb=multiply(darb,testArray[i])[0];
-    }
-    return[darb,`The numbers ${testArray} have a product of ${darb}.`];
+    var arrDana5 = multiply(testArray[0],testArray[1]);
+
+    var arrDana5x = multiply(arrDana5[0], testArray[2]);
+    
+    var message5 = 'The numbers ' +  testArray + ' have a product of ' + arrDana5x[0] + '.'
+    
+    var arr5 = [arrDana5x[0] , message5];
+    
+    return arr5;
 
 }
 
