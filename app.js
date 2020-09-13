@@ -80,13 +80,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
-    var forSum=0;
-    for(var i=0;i<testDynamicArray.length;i++){
-        forSum=sum(forSum,testDynamicArray[i])[0];
-    }
-    return[forSum,`${testDynamicArray} was passed in as an array of numbers, and ${forSum} is their sum.`]
 
-}
+    var sumDana = sum(testArray[0],testArray[1]);
+    
+    var sumRay4x = sum(sumDana[0], testArray[2]);
+    
+    var message4 = testArray + ' was passed in as an array of numbers, and '+ sumRay4x[0] + ' is their sum.';
+    
+    var arr4 = [sumRay4x[0] , message4];
+    
+    
+    return arr4;
+    
+    }
 
 // Here is the test for sumArray(); uncomment it to run it
 
