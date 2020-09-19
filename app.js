@@ -65,7 +65,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     return [arg1sm[0],
             arg2sm[0],
            `${a} and ${b} and ${c} sum to ${arg1sm[0]} .`,
-           `The product of ${a} and ${b} and ${c} ${arg2sm[0]}  .`]
+           `The product of ${a} and ${b} and ${c} ${arg2sm[0]}.`]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -93,7 +93,7 @@ function sumArray(testArray) { //eslint-disable-line
     var x = sum(testArray[0], testArray[1]);
     var y = sum(x[0], testArray[2]);
 
-    return [` ${y[0]}` ,`${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${y[0]} is their sum. `]
+    return [`${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${y[0]} is their sum.`]
 
 }
 
@@ -120,7 +120,7 @@ function multiplyArray(multArr) { //eslint-disable-line
     var x = multiply(testArray[0], testArray[1]);
     var y = multiply(x[0], testArray[2]);
 
-    return [` ${y} `, ` The numbers ${testArray[0]},${testArray[1]},${testArray[3]}  have a product of ${y}. `]
+    return [`The numbers ${testArray[0]},${testArray[1]},${testArray[3]} have a product of ${y}.`]
 
 }
 
