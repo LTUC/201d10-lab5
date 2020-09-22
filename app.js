@@ -33,8 +33,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+   
+      
+        var index1 = a+b;
+        var index2="The product of "+a+" and "+b+" is "+index1+"."
+        var result = [index1,index2]
+        return result
+  }  
 
-}
+console.log(multiply(1,2))
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
