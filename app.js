@@ -9,8 +9,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
+    var index1 = a+b;
+    var index2=a.toString()+b.toString()
+    var result = [index1,index2]
+    return result
+    }  
+    console.log(sum(1,2))
 
-}
+    
+    //eslint-disable-line
+
+
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -27,8 +36,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+   
+      
+    var index1 = a+b;
+    var index2="The product of "+a+" and "+b+" is "+index1+"."
+    var result = [index1,index2]
+    return result
+}  
 
-}
+console.log(multiply(1,2))
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -47,9 +63,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
 
-}
+function sumAndMultiply(a, b, c) {
+    var index1 = a+b+c ;
+    var index2 = a*b*c ;
+    var index3 = a+" and "+b+" and "+c+" sum to "+index1
+    var index4 = "the product of "+a+" and "+b+" and "+c+" is "+index2 
+    var result = [index1,index2,index3,index4]
+    return result ;
+    }
+    console.log(sumAndMultiply(2,4,6))
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -69,9 +93,6 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
-
-}
 
 // Here is the test for sumArray(); uncomment it to run it
 
