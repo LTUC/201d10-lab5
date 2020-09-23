@@ -9,8 +9,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-   
+   var c = a + b;
+	    var resultString = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
+
+    return [c , resultString];
 }
+console.log(sum(4,7)) 
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -26,8 +31,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+ var c =  a*b
+    var resultMultiplyString = 'The product of ' + a + ' and ' + b + ' is ' + c ;
+    return [ c, resultMultiplyString];
 }
+console.log(multiply(5,9))
+
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -46,7 +55,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-   
+    var d = a + b + c;
+    var e = a*b*c;
+    return [ d , e , a + ' and ' + b + ' and ' + c + ' sum to ' + d + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + e + '.'];
+}
+console.log(sumAndMultiply(4,7,5))
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
@@ -74,7 +88,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 }
 
-
+console.log(sumArray(testArray))
 
 // Here is the test for sumArray(); uncomment it to run it
 
