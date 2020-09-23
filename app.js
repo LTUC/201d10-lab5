@@ -9,12 +9,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    var c = a + b;
-	    var resultString = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
-
-    return [c , resultString];
+   
 }
-console.log(sum(4,7)) 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -30,11 +26,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    var c =  a*b
-    var resultMultiplyString = 'The product of ' + a + ' and ' + b + ' is ' + c ;
-    return [ c, resultMultiplyString];
+
 }
-console.log(multiply(5,9))
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -53,11 +46,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    var d = a + b + c;
-    var e = a*b*c;
-    return [ d , e , a + ' and ' + b + ' and ' + c + ' sum to ' + d + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + e + '.'];
-}
-console.log(sumAndMultiply(4,7,5))
+   
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
@@ -77,12 +66,12 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    function sumArray() { //eslint-disable-line
-        var sumOfArray =sum(sum(testArray[0],testArray[1])[0],testArray [2])[0];
-        //console.log(testArray[0])
-        var resultString =testArray[0]+','+testArray[1]+','+testArray[2] +' was passed in as an array of numbers, and '+ sumOfArray +' is their sum.'
-        //console.log(resultString);
-        return [sumOfArray,resultString];
+    var sum_total = 0;
+   sum_total = sum(sumArr[0], sumArr[1])[0];
+   sum_total = sum(sum_total, sumArr[2])[0];
+    
+    return [sum_total ,sumArr +' was passed in as an array of numbers, and ' + sum_total + ' is their sum.'] ;
+
 }
 
 
