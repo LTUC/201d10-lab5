@@ -62,7 +62,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
- testSumAndMultiply(4,7,5);
+
+ //testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -77,13 +78,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { 
     var Sum=0;
-    for(var i=0;i<testArray.length;i++){
-        Sum=sum(Sum,testArray[i])[0];
+    for(var i=0;i<sumArr.length;i++){
+        Sum=sum(Sum,sumArr[i])[0];
     }
-    return[Sum,`${testArray} was passed in as an array of numbers, and ${Sum} is their sum.`]
+    return[Sum,`${sumArr} was passed in as an array of numbers, and ${Sum} is their sum.`]
 }
 
 
