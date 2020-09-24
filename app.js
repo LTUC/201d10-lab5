@@ -35,6 +35,7 @@ function multiply(a, b) { //eslint-disable-line
     var resultMultiplyString = 'The product of ' + a + ' and ' + b + ' is ' + c ;
     return [ c, resultMultiplyString];
 }
+
 console.log(multiply(5,9))
 
 // Here is the test for multiply(); uncomment it to run it
