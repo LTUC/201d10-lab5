@@ -62,6 +62,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
+
  //testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -106,8 +107,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var mul=1;
+    for(var i=0;i<testArray.length;i++){
+        mul=multiply(mul,testArray[i])[0];
+    }
+    return[mul,`The numbers ${testArray} have a product of ${mul}.`];
 }
+
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
@@ -132,12 +139,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    var num=1;
+    for(var i=0 ;i<testDynamicArray.length;i++)
+    {
+        num=multiply(num,testDynamicArray[i])[0];
+    }
+    return [num,`The numbers ${testDynamicArray} have a product of ${num}.`];
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
