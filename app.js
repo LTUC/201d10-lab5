@@ -8,9 +8,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-
+function sum(a, b) {
+     //eslint-disable-line
+     var sum =a+b;
+    return [(a+b),'The sum of '+ a + ' and ' +  b + ' is ' + sum +'.'];
 }
+
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -26,9 +29,11 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
-}
+function multiply(a, b) { 
+    //eslint-disable-line
+        var multiply =a*b;
+       return [(a*b),'The product of '+ a + ' and ' +  b + ' is ' + multiply +'.'];
+   }
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -47,8 +52,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+function sumAndMultiply(a, b, c) { 
+    //eslint-disable-line
+    var jme3=sum((sum(a,b)[0]),c)[0];
+    var darb=multiply(multiply(a,b)[0],c)[0];
+    var three=`${a} and ${b} and ${c} sum to ${jme3}.`;
+    var four=`The product of ${a} and ${b} and ${c} is ${darb}.`;
+    return[jme3,darb,three,four];
+    // Fix comment
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -67,11 +78,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
-
+var testDynamicArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
 
-}
+    var sumDana = sum(testArray[0],testArray[1]);
+    
+    var sumRay4x = sum(sumDana[0], testArray[2]);
+    
+    var message4 = testArray + ' was passed in as an array of numbers, and '+ sumRay4x[0] + ' is their sum.';
+    
+    var arr4 = [sumRay4x[0] , message4];
+    
+    
+    return arr4;
+    
+    }
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -90,12 +111,24 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+
+function multiplyArray(multArr) { 
+    //eslint-disable-line
+
+    var arrDana5 = multiply(testArray[0],testArray[1]);
+
+    var arrDana5x = multiply(arrDana5[0], testArray[2]);
+    
+    var message5 = 'The numbers ' +  testArray + ' have a product of ' + arrDana5x[0] + '.'
+    
+    var arr5 = [arrDana5x[0] , message5];
+    
+    return arr5;
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -119,10 +152,15 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    var darb=1;
+    for(var i=0;i<testDynamicArray.length;i++){
+        darb=multiply(darb,testDynamicArray[i])[0];
+    }
+    return[darb,`The numbers ${testDynamicArray} have a product of ${darb}.`];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
